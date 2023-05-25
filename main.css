@@ -6,7 +6,7 @@ body{
     padding: 0;
     color: #023047;
 }
-/* .page CUIDADO, pode pegar todas as pages*/
+/* .page CUIDADO!, pode pegar todas as pages*/
 div.page{
     display: flex;
     flex-direction: column;
