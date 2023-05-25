@@ -1,0 +1,71 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  /*   background-image: linear-gradient(#ffcccc, #ffff, #ffcccc); */
+    background-color: rgba(100, 149, 237, 0.2);
+}
+header{
+    box-shadow: 5px 0px 8px rgba(180, 181, 182, 0.7);
+    background-color: #ffff;
+    height: 60px;
+    /* position: sticky; */
+}
+h1 {
+    text-align: center;
+    color: cornflowerblue;
+    margin: 40px 0px 25px 0px;
+}
+p{
+    color: rgb(77, 78, 78);
+    text-align: center;
+    margin-bottom: 30px;
+}
+form{
+    /* border: 1px solid rgb(180, 181, 182); */
+    width: 25%;
+    margin: auto;
+    padding: 30px 30px 70px 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    color: rgb(77, 78, 78);
+    background-color: #fff;
+    box-shadow: 0px 0px 8px rgba(180, 181, 182, 0.7);
+}
+label{
+    margin: 10px 0px 10px 0px;
+    font-size: large;
+}
+input{
+    margin-bottom: 20px;
+    font-size: medium;
+    padding: 5px 0px;
+   /*  border-radius: 3px; */
+    border: none;
+    border-bottom: 1px solid rgb(180, 181, 182);
+    outline: none;
+}
+button{
+    margin: 30px 0px 15px 0px;
+    padding: 9px 0px;
+    text-transform: uppercase;
+   /*  border: 1px solid #cfcece; */
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+}
+button:hover{
+    background-color: rgb(62, 121, 231);
+    border: 1px solid rgb(62, 121, 231);
+}
+a{
+    margin: 10px 0px;
+    color: none;
+    font-size: small;
+}
