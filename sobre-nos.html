@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Sobre Nós</title>
+</head>
+
+<body
+    style="height: 1600px; font-family: 'Inter', sans-serif; padding: 0; margin: 0; font-size: 0.9rem; background-color: #000;">
+    <div
+        style="position: relative; padding: 0; margin: 0;overflow: hidden; background-image: url(./assets/corredor-mercado.jpeg); height: 630px; background-repeat: no-repeat;background-size: cover;">
+        <img style="height: 870px; margin-left: 250px; object-position: 0px 55px;" src="./assets/mulher-2.png"
+            alt="mulher com sacola de mercado">
+        <div class="banners1"
+            style="display: none;position: absolute; background-color: rgba(255,255,255,0.95); color:#0f9e33; height: auto; top: 30px; left: 0px; width: 25%; border-radius: 5px; padding: 20px;">
+            <h1>Nossa História</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, consectetur hic, animi labore odio ipsam
+                possimus suscipit fugiat perspiciatis eos quam a assumenda? Et expedita ullam, quae voluptatum fugit
+                sapiente.</p>
+        </div>
+        <div class="banners2"
+            style="display: none;position: absolute; background-color: rgba(255,255,255,0.95); color:#0f9e33; height: auto; top: 265px; left: 0px; width: 25%; border-radius: 5px; padding: 20px;">
+            <h2>Missão</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, odit! Tempora quidem non voluptates.</p>
+        </div>
+        <div class="banners3"
+            style="display: none;position: absolute; background-color: rgba(255,255,255,0.95); color:#0f9e33; height: auto; top: 450px; left: 0px; width: 25%; border-radius: 5px; padding: 20px;">
+            <h2>Visão</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, odit! Tempora quidem non voluptates.</p>
+        </div>
+    </div>
+    <script>
+
+        $(document).ready(function () {
+            $(".banners1").animate({ left: '700px' }, 100, function () {
+                $(this).fadeIn(150);
+            });
+            $(".banners2").animate({ left: '700px' }, 100, function () {
+                var banner = $(this);
+                setTimeout(function () {
+                    banner.fadeIn(200);
+                }, 500);
+            });
+            $(".banners3").animate({ left: '700px' }, 100, function () {
+                var banner = $(this);
+                setTimeout(function () {
+                    banner.fadeIn(300);
+                }, 1000);
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
