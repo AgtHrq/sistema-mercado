@@ -14,7 +14,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #480ca8;
 }
 
@@ -35,17 +35,18 @@ body{
     font-size: 2.3em;
 }
 
-.formLogin input{
+.formLogin input, select{
     padding: 15px;
     font-size: 14px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
     margin-top: 5px;
     border-radius: 4px;
+    outline: none;
 }
 
 .formLogin input:focus{
-    border: 1px solid #f72585;
+    border: 1px solid #ff0676;
 }
 
 .formLogin label{
@@ -64,11 +65,11 @@ body{
     display: inline-block;
     margin-bottom: 20px;
     font-size: 13px;
-    color: #f72585;
+    color: #ed08f5;
 }
 
 .btn{
-    background-color: #f72585;
+    background-color: #ff0676;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
@@ -80,5 +81,33 @@ body{
 
 .btn:hover{
     transform: scale(1.05);
-    background-color: #ff06ff;
+    background-color: #ff0676;
+}
+
+.buttons{
+    text-align: center;
+}
+
+#send-button{
+    background-color: blue;
+    width: 100px;
+}
+
+#cancel-button{
+    background-color: red;
+    width: 100px;
+}
+
+.img-logo{
+    display: flex;
+    width: 50%;
+    min-height: 50%;
+    object-fit: cover;
+    transition: transform 0.4s;
+    margin-left: 15px;
+}
+
+.memo{
+    width: 650px;
+    height: 200px;
 }
