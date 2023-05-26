@@ -46,7 +46,8 @@ body {
     margin-bottom: 25px;
 }
 
-.formLogin input {
+.formLogin input,
+select {
     padding: 15px;
     font-size: 14px;
     border: 1px solid #ccc;
@@ -95,4 +96,16 @@ body {
     transform: scale(1.05);
     background-color: #ff0676;
 
+}
+
+.buttons {
+    text-align: center;
+}
+
+#send-button {
+    background-color: blue;
+}
+
+#cancel-button {
+    background-color: red;
 }
