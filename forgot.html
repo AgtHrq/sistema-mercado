@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Esqueci minha Senha </title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div class="page">
+        <form method="post" class="formLogin">
+            <h1>Esqueci minha Senha</h1>
+            <p>Preencha suas informações.</p>
+            <label for="name">Nome Completo </label>
+            <input type="name" placeholder="Digite seu nome completo" autofocus="true">
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail">
+            <label for="Pergunta">Pergunta de Segurança</label>
+            <select name="select">
+                <option value="valor0">Selecione</option>
+                <option value="valor1">Qual o nome do seu cachorro?</option>
+                <option value="valor2">Qual os últimos dígitos da placa do seu carro?</option>
+                <option value="valor3">Qual os primeiros 5 dígitos do seu CPF?</option>
+            </select>
+            <label for="resposta">Resposta</label>
+            <input type="text" placeholder="Digite sua resposta">
+            <div class="buttons">
+                <input id="send-button" class="btn" type="submit" value="Enviar">
+                <input id="cancel-button" class="btn" type="submit" value="Cancelar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
