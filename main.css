@@ -12,13 +12,12 @@ body {
     flex-direction: column;
     align-itens: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: #480caB;
 }
 
 .formLogin {
-    width: 50%;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -35,7 +34,7 @@ body {
     font-size: 2.3em;
 }
 
-.formLogin input {
+.formLogin input, select {
     padding: 15px;
     font: 14px;
     border: 1px solid #ccc;
@@ -78,4 +77,16 @@ body {
 .btn:hover {
     transform: scale(1.05);
 
+}
+
+.forgot_botoes {
+    text-align: center;
+}
+
+#btn1 {
+    background-color: blue;
+}
+
+#btn2 {
+    background-color: gray
 }

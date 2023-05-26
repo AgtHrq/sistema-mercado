@@ -1,0 +1,47 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Esqueci minha senha</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>Esqueci minha Senha</h1>
+            <p>Preencha suas informações pessoais.</p>
+
+            <label for="name">Nome Completo</label>
+            <input type="name" placeholder="Digite seu nome completo" autofocus="true">
+            
+            <label for="name">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail">
+
+            <label for="pergunta">Pergunta de Segurança</label>
+            
+            <select name="select">
+                <option selected value="valor0">Selecione:</option>
+                <option value="valor1">Qual o nome do seu cachorro?</option>
+                <option value="valor2">Últimos 4 (quatro) dígitos da placa do seu carro?</option>
+                <option value="valor3">Primeiros 5 (cinco) dígitos do seu CPF?</option>
+            </select>
+
+            <label for="resposta">Resposta</label>
+            <input type="text" placeholder="Digite aqui a sua resposta de segurança">
+            
+            <div class="forgot_botoes">
+                <input type="submit" value="Enviar" class="btn" id="btn1">
+                <input type="submit" value="Cancelar" class="btn" id="btn2">
+            </div>  
+
+        </form>
+    </div>
+    <h2> Este é um título</h2>
+    <script>
+        var title = document.querySelector("h2")
+        title.innerHTML = "This is another title"
+
+    </script>
+    
+</body>
+</html>
