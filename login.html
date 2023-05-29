@@ -13,13 +13,24 @@
         <h1>Login</h1>
         <p>Digite os seus dados de acesso no campo abaixo.</p>
         <label for="email">E-mail</label>
-        <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+        <input id="email" type="email" placeholder="Digite seu e-mail" autofocus="true" />
         <label for="password">Senha</label>
-        <input type="password" placeholder="Digite sua senha" />
+        <input id="password" type="password" placeholder="Digite sua senha" />
         <a href="forgot.html" target="_blank">Esqueci minha senha</a>
         <a href="sobre.html" target="_blank">Sobre</a>
         <input type="submit" value="Acessar" class="btn" />
       </form>
     </div>
+    <script>
+      
+      const input = document.querySelector(".btn");
+
+      input.addEventListener("click", function() {
+        event.preventDefault();
+        document.querySelector("#email").value = "";
+        document.querySelector("#password").value = "";
+      });
+
+    </script>
   </body>
 </html>

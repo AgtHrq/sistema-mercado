@@ -7,10 +7,13 @@
     <title>AulaJS</title>
   </head>
   <body>
-    <h1>Isso é um Titulo</h1>
+    <h1>Título 1</h1>
+    <h1>Título 2</h1>
     <script>
-      var title = document.querySelector("h1");
-      title.innerHTML = "Outro titulo";
+      var titles = document.querySelectorAll("h1");
+      titles.forEach(el => {
+        el.innerHTML = "Título X"
+      })
     </script>
   </body>
 </html>
