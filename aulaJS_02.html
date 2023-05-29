@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>Login</h1>
+            <p>Digite os seus dados de acesso no campo abaixo.</p>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Digite sua senha" />
+            <a href="forgot.html" target="_blank">Esqueci minha senha</a>
+            <a href="sobre.html" target="_blank">Sobre</a>
+            <!-- criar uma página que fale sobre o sistema. Ex. É um sistema de mercado... -->
+            <input type="submit" value="Acessar" class="btn" />
+
+            <script>
+                var element = document.querySelector("input.btn")
+                element.addEventListener("click", function (e) {
+                    alert('O código está funcionando!')
+                    document.querySelector("input.email").value = "";
+                    document.querySelector("input.passord").value = "";
+
+                    // element.style.label = "none";
+                    // element.style.display ="";
+                    // my_input_element.value = "";
+                });
+
+                // var nodes = mynode.querySelectorAll("input")
+                // mynode.id ="intro";
+
+
+
+            </script>
+        </form>
+    </div>
+</body>
+
+</html>
