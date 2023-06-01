@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Titulo1</h1>
-    <h1>Titulo2</h1>
-    <script>
+<html>
+    <body>
+        <h1>Titulo1</h1>
+        <h1>Titulo2</h1>
+        <script>
+          /*   var titles = document.querySelectorAll("h1")     POSSO FAZER ASSIM OU NO EXEMPLO ABAIXO.
+             for(i = 0; i <titles.length; i++) {
+                 titles[i].innerHTML = "Titulo Teste"
+        }*/
         var titles = document.querySelectorAll("h1")
-        titles.innerHTML = "Titulo Teste"
-    </script>
-    
-</body>
+        titles.forEach(element => {
+            element.innerHTML = "Titulo teste"
+        })
+
+        </script>
+    </body>
 </html>
