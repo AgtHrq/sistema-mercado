@@ -13,12 +13,19 @@
             <h1>Login</h1>
             <p>Digite os seus dados de acesso no campo abaixo.</p>
             <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" autofocus="true"/>
+            <input class="email" type="email" placeholder="Digite seu e-mail" autofocus="true"/>
             <label for="password">Senha</label>
-            <input type="password" placeholder="Digite sua senha" />
+            <input class="senha" type="password" placeholder="Digite sua senha" />
             <a href="forgot.html"target="_blank">Esqueci minha senha</a>
-            <a href="/"target="_blank">Sobre</a>
-            <input type="submit" value="Acessar" class="btn" />
+            <a href="sobre-aula.html"target="_blank">Sobre</a>
+            <input type="submit" value="Acessar" class="btn">
+        <script>
+            var element = document.querySelector("imput.btn")
+            element.addEventListener("click")
+            //alert('O código está funcionando')
+            document.querySelector("imput.email").value=""
+            document.querySelector("imput.senha").value=""
+        </script>
         </form>
     </div>
     
